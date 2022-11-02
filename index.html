@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src='https://unpkg.com/vue@3'></script>
+
+  <title>Hello Vue</title>
+</head>
+<body>
+  
+<div id="app">
+
+<h1>Ciao <strong :class="color"> {{nome}} </strong> {{cognome}} come va? </h1>
+
+<hr>
+
+  <input type="text" placeholder="Scrivi Qualcosa" name="" id="" v-model="saluto" >
+
+  <h2>{{saluto}}</h2>
+
+<hr>
+
+
+  <input type="text" placeholder="Scrivi un colore" name="" id="" v-model="classe" >
+
+  <h2 :class="classe">Dimmi che colore vuoi questa scritta</h2>
+
+  <hr>
+<!-- --------------------------   -->
+
+<img :src="pic" alt="">
+
+<br>
+
+<h2>Scrivi il Nome di un animale</h2>
+<input type="text" v-model="src"  >
+
+<br>
+
+<img :src="src + soggetto + jpeg" alt="">
+<hr>
+<br>
+<!-- ----------------------------- -->
+
+<button @click="mostraNascondi()" >Cliccami</button>
+
+<img v-show="mostraImg" :src="pic2" alt="">
+
+<p v-show="mostraPar">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ea dolorem veniam harum blanditiis culpa. Aut, eaque, qui commodi perspiciatis et eveniet nisi facere quia repudiandae laborum sapiente, beatae tempore.
+</p>
+
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

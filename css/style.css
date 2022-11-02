@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: cadetblue;
+  color: #fff;
+  padding: 15px;
+}
+
+input{
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+img{
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px #fff;
+  margin-bottom: 20px;
+}
+
+button{
+  display: block;
+  margin: 20px;
+  padding: 10px 15px;
+}
+
+hr{
+  border-color: white;
+  margin: 10px;
+}
+
+p{
+  width: 300px;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+.green{
+
+color: green;
+
+}
